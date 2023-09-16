@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+float lbsKg(float lbs) {
+  float conversionUnit = 2.20462262; //Conversion unit
+  float outputKg; 
+  outputKg = lbs / conversionUnit;
+  return outputKg;
+}
+float conversion(int a){ //the parameter of the code
+
+float b = (a-32)/(1.8);
+return b;
+}
+
+double calcRad(double deg) {
+  return deg * 0.01745;
+}
+
+int main()  {
+double deg = 90;
+double rad = calcRad(deg);
+
+cout << "90 degrees = " << rad << " radians" << endl;
+
+
+
+
+  float inputLbs = 184.4; //Input in pounds
+
+  std::cout << inputLbs << " Pounds is " << lbsKg(inputLbs) << " kilograms.\n";
+  //created by William Lattimore
+  float result;
+result= conversion (100); //argument of code, also where you change the desired number that you want from fahrenheit to celsius, in this case it is 100
+cout<< "The temperature conversion is " << result << " degrees celsius.";
+//created by JACK WILSON
+/**OUTPUT***90 degrees = 1.5705 radians
+184.4 Pounds is 83.6424 kilograms.
+The temperature conversion is 37.7778 degrees celsius. ***/
+}
