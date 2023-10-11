@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+ //declare variables in main
+  int numstudents = 2;
+  int numTests = 3;
+  int total;
+  int average;
+/*for loop in main function 4 variables above for loops...student is new declaration in 1st loop..test is new in 2nd loop..score is new
+7 total...4 above for loops 1 in 1st loop..2 in second loop*/
+  for(int student = 1 /*student is undeclared*/; student <=numstudents; student++)
+  {//now i add the brackets in for loop//
+  total = 0; //i just declared this variable//
+  for (int test = 1; test <= numTests; test++) //inner for loop
+  {
+    double score; //new variable
+    cout << "Enter score " << test << "for ";
+    cout << " student " << student << " : ";
+    cin >> score;
+    total += score;
+  }
+  average = total / numTests;
+  cout << "the average score for student " << student;
+  cout << "is " << average << ".\n\n";
+  }
+}
