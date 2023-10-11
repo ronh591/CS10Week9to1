@@ -1,2 +1,2 @@
-# function-calc
+# cs10MidTerm
 c++ c10
