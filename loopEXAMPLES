@@ -1,0 +1,28 @@
+#include <string>
+#include <iostream>
+using namespace std;
+int main() {
+string answer;
+string summary = " ";
+int k = 1;
+do {
+  std::cout << "Enter A,B,C or D for question " << k << ":";
+  std:: cin >> answer;
+  summary = summary + " " + answer;
+  k++;
+}while (k <= 10); 
+std::cout << " = "<< summary << std::endl;
+}
+/*Enter A,B,C or D for question 1:A
+Enter A,B,C or D for question 2:B
+Enter A,B,C or D for question 3:C
+Enter A,B,C or D for question 4:D
+Enter A,B,C or D for question 5:A
+Enter A,B,C or D for question 6:B
+Enter A,B,C or D for question 7:C
+Enter A,B,C or D for question 8:D
+Enter A,B,C or D for question 9:A
+Enter A,B,C or D for question 10:B
+ =   A B C D A B C D A B
+ 
+Normal program termination. Exit status: 0*/
