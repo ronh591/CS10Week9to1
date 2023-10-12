@@ -1,0 +1,15 @@
+#include <string>
+#include <iostream>
+using namespace std;
+int main() {
+int n =9, count;
+
+count = 0;
+while ( n > 1 )
+{
+ n /= 2;
+ count++;
+}
+std::cout << count << " time(s)"<< endl ;
+std::cout << n << endl;
+}
