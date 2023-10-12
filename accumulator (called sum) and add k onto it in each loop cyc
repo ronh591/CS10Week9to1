@@ -1,0 +1,17 @@
+//Calculate 1 + 2 + ...+ n
+#include <iostream>
+int main() 
+{
+ int n;
+ std::cout << "Enter n: ";
+ std::cin >> n;
+ int sum = 0;
+ int k = 1;
+ while (k<=n)
+{
+  sum += k; //ACCUMULATOR
+  std::cout << "+" << k << std::endl;
+  k++;
+}
+ std::cout << " = " << sum << std::endl;
+}
