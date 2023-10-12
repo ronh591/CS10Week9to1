@@ -1,0 +1,14 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+int modtest = 1;
+int result = 0;
+cout << "enter a number : (q to quit): ";
+  while (cin >> modtest)
+  {
+    result = modtest % 2;
+    cout << result << endl;
+    cout << "enter a number: ( q to quit ): ";}
+  cout << "thanks for playing!";
+}
