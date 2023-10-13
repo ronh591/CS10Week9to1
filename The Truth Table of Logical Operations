@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int num;
+ int num1;
+ int num2;
+ cout << "guess the number  ";
+ cin >> num;
+ while(num != 4)
+ {
+  cout << "try again, four  ";
+  cin >> num;
+ }
+ cout << "you guessed it" << endl;
+ cout << "enter a number between 1 and 10  " ;
+ cin >> num1;
+ while(num1 > 0 && num1 <10)
+ {
+  cout <<"your number must be between one and ten  ";
+  cin >> num1;
+}
+ cout << "enter a number between 1 and 10: ";
+ cin >> num2;
+ while( num2 < 0 || num2 > 10)
+{  cout << " your number must be between one and ten";
+   cin >> num2;
+}
+  cout << "you entered  " << num2 << endl;
+}
