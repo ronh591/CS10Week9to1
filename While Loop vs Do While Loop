@@ -1,0 +1,40 @@
+#include <string>
+#include <iostream>
+using namespace std;
+void ATMwhile()
+{
+	int withdrawal;
+        
+	
+        cout << "Amount of withdrawal in 20 increments(Between 20 and 40): ";
+	cin >> withdrawal;	
+	// trap user until they follow directions
+	while (withdrawal % 20 != 0)  //NO SEMICOLON HERE
+	{
+		cout << "Amount of withdrawal (Between 20 and 40): ";  
+		cin >> withdrawal;		
+	}
+	cout << "Here is your cash";
+	
+}
+void ATMdo()
+{
+	int withdrawal;
+	
+	
+        // trap user until they follow directions
+	do
+	{
+		cout << "Amount of withdrawal (Between 20 and 40): ";
+		cin >> withdrawal;
+	}while (withdrawal % 20 != 0);   //PUT SEMICOLON HERE!
+
+	cout << "Here is your cash";
+	
+}
+int main()
+{
+     ATMwhile(); 
+      ATMdo();
+      
+}  //withdrawl is spelled incorrectly in this programme
