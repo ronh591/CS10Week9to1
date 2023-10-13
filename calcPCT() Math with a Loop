@@ -1,0 +1,30 @@
+#include <string>
+#include <iostream>
+using namespace std;
+float calcPCT(float total, float lostpoints)
+{
+ float pct;
+ pct = (total - lostpoints)/total;
+ return pct;
+}
+int main()
+{
+ float QuizTotal = 0;
+ float WrongAnswers;
+ float pct;
+
+do {
+  cout << "Enter total possible points for the Quiz (greater than zero): ";
+  cin >> QuizTotal;
+} while (QuizTotal < 0);
+  cout << " Please enter the number of points you missed on the quiz: ";
+  cin >> WrongAnswers;
+while (WrongAnswers >= QuizTotal)
+{
+ cout << "Error: missed points cannot be higher than total points. \n";
+  cout << "Please enter the number of points you missed on the quiz: ";
+  cin >> WrongAnswers;
+}
+pct = calcPCT(QuizTotal, WrongAnswers);
+cout << pct << endl;
+}
