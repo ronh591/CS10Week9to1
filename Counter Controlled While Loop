@@ -1,0 +1,22 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int main()
+{int i = 0;
+while (i < 5) {
+  std::cout << i << " : " << "As we know, the while loop loops through a block of code as long as a specified condition is true.  "<< "\n";
+  std::cout << i << " : " << "(navigator.userAgent.match(/(MSIE|Trident\/)/))" << std::endl;
+  i++;
+}
+}
+/*0 : As we know, the while loop loops through a block of code as long as a specified condition is true.  
+0 : (navigator.userAgent.match(/(MSIE|Trident/)/))
+1 : As we know, the while loop loops through a block of code as long as a specified condition is true.  
+1 : (navigator.userAgent.match(/(MSIE|Trident/)/))
+2 : As we know, the while loop loops through a block of code as long as a specified condition is true.  
+2 : (navigator.userAgent.match(/(MSIE|Trident/)/))
+3 : As we know, the while loop loops through a block of code as long as a specified condition is true.  
+3 : (navigator.userAgent.match(/(MSIE|Trident/)/))
+4 : As we know, the while loop loops through a block of code as long as a specified condition is true.  
+4 : (navigator.userAgent.match(/(MSIE|Trident/)/))*/
