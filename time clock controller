@@ -1,0 +1,18 @@
+#include <string>
+#include <iostream>
+using namespace std;
+void countDown()
+{
+ int counter = 10;
+ while (counter > 0)
+  { std::cout << counter << std::endl;
+    counter--;
+}  
+  std::cout << "Goodbye to now";
+}
+
+void displayTime(int hour, int minute)
+{ 
+  std::cout << "The target time is: "  << hour;
+  std::cout <<  ":"  << minute << std::endl;
+}
