@@ -1,0 +1,61 @@
+/*<loop control>
+      <loop body> ;
+ <loop control>
+   {
+      <body statement>;
+      <body statement>;
+      <body statement>;
+      <body statement>;
+      <body statement>;
+   }*/
+#include <iostream>
+using namespace std;
+
+int  main()
+{
+ int k;
+   
+   for (k = 1; k <= 10; k = k + 1)
+      cout << "k = " << k << endl;
+// make these symbolic constants so that if we wish to change them
+   // we can do it quickly up here rather than muck around in the code
+   int const LOW_VAL = 15;
+   int const HIGH_VAL = 101;
+   
+
+   int sum;    // holds the answer
+     // loop counter
+
+   sum = 0;    // start it off at 0 - we will add to it
+   // loop, adding the ODD numbers
+   for ( k = LOW_VAL; k <= HIGH_VAL; k = k + 2 )
+      sum = sum + k;
+   cout <<" k = " << k << endl;
+   cout << "The sum of the odd numbers between " << LOW_VAL
+      << " and " << HIGH_VAL << ", inclusive, is " << sum << endl << endl;
+   
+ double withdrawal;
+
+   // get the withdrawal amount from user
+   cout << "Amount of withdrawal ($20 minimum): ";
+   cin >> withdrawal;
+      
+   // trap user until they follow directions
+   while (withdrawal < 20)
+   {
+      cout << "$20 Minimum.  \nPlease try again: ";
+      cin >> withdrawal;
+   }
+   
+/* -------------------
+
+Amount of withdrawal ($20 minimum): 18
+$20 Minimum.  
+Please try again: 25
+
+New balance:975.03
+
+... etc.
+
+------------------- */
+}
