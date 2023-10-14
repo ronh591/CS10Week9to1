@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+ int k;
+  
+  for (k = 1; k <= 10; k = k + 1)
+   cout << "k = " << k << endl;
+// make these symbolic constants so that if we wish to change them
+  // we can do it quickly up here rather than muck around in the code
+  int const LOW_VAL = 15;
+  int const HIGH_VAL = 101;
+  
+
+  int sum;  // holds the answer
+   // loop counter
+
+  sum = 0;  // start it off at 0 - we will add to it
+  // loop, adding the ODD numbers
+  for ( k = LOW_VAL; k <= HIGH_VAL; k = k + 2 )
+  {
+   cout << "k = " << k << endl;
+   sum = sum + k;
+   }
+  cout << "The sum of the odd numbers between " << LOW_VAL
+   << " and " << HIGH_VAL << ", inclusive, is " << sum << endl << endl;
+  
+}
