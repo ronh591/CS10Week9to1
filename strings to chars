@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+string myString = "30 Year Adjustable";
+char let1, let2;
+let1=myString[0];
+let2=myString[3];
+cout << "Original string: \n"
+  <<myString << endl;
+cout << "Letters in position 0 and 3: \n"
+  << let1 << " " << let2 << " " << endl;
+myString[0]='1';
+myString[1] = '5';
+cout <<"Modified string: \n"
+<< myString << endl;
+}
+/*Original string: 
+30 Year Adjustable
+Letters in position 0 and 3: 
+3 Y 
+Modified string: 
+15 Year Adjustable
+ */
