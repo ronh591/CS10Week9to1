@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+float calcPCT(float total, float lostpoints)
+{
+ float pct;
+ pct = (total - lostpoints) / total;
+ return pct;
+}
+int main()
+{
+float pct =calcPCT(100,10);
+float QuizTotal;
+float WrongAnswers;
+cout << pct << endl;
+cout <<"Enter total possible points for the Quiz: ";
+cin >> QuizTotal;
+cout << "Enter points for missed questions: ";
+cin >> WrongAnswers;
+pct = calcPCT(QuizTotal, WrongAnswers);
+cout << pct << endl;
+}
+/*0.9
+Enter total possible points for the Quiz: 100
+Enter points for missed questions: 35
+0.65
+ */
