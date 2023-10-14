@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+int main() {
+int k;
+ for (k=1; k <= 10; k = k + 1)
+  {cout << "k  = " << k << endl;}
+int const LOW_VAL = 15;
+int const HIGH_VAL = 101;
+int sum;
+sum = 0;
+for (k=LOW_VAL; k<=HIGH_VAL; k = k +2)
+{
+  sum = sum + k;
+  cout << "k = " << k << ":" << sum << endl;//THIS WORKED RIGHT BECAUSE IT WAS INSIDE THE BRACKETS
+}
+cout << "The sum of the odd numbers between " << LOW_VAL
+<< " AND " << HIGH_VAL << ", inclusive, is " << sum << endl;
+}
+/*k  = 1
+k  = 2
+k  = 3
+k  = 4
+k  = 5
+k  = 6
+k  = 7
+k  = 8
+k  = 9
+k  = 10
+k = 15:15
+k = 17:32
+k = 19:51
+k = 21:72
+k = 23:95
+k = 25:120
+k = 27:147
+k = 29:176
+k = 31:207
+k = 33:240
+k = 35:275
+k = 37:312
+k = 39:351
+k = 41:392
+k = 43:435
+k = 45:480
+k = 47:527
+k = 49:576
+k = 51:627
+k = 53:680
+k = 55:735
+k = 57:792
+k = 59:851
+k = 61:912
+k = 63:975
+k = 65:1040
+k = 67:1107
+k = 69:1176
+k = 71:1247
+k = 73:1320
+k = 75:1395
+k = 77:1472
+k = 79:1551
+k = 81:1632
+k = 83:1715
+k = 85:1800
+k = 87:1887
+k = 89:1976
+k = 91:2067
+k = 93:2160
+k = 95:2255
+k = 97:2352
+k = 99:2451
+k = 101:2552
+The sum of the odd numbers between 15 AND 101, inclusive, is 2552
+ 
+Normal program termination. Exit status: 0*/
